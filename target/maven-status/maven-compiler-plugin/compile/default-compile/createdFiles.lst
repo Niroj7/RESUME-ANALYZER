@@ -1,7 +1,0 @@
-com/niroj/resumeanalyzer/ResumeanalyzerApplication.class
-com/niroj/resumeanalyzer/service/SkillRepository.class
-com/niroj/resumeanalyzer/model/AnalysisResult.class
-com/niroj/resumeanalyzer/controller/HomeController.class
-com/niroj/resumeanalyzer/service/ResumeAnalyzerService.class
-com/niroj/resumeanalyzer/controller/ResumeController.class
-com/niroj/resumeanalyzer/service/TextExtractor.class
