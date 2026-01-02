@@ -1,0 +1,269 @@
+* {
+    box-sizing: border-box;
+    font-family: "Segoe UI", sans-serif;
+}
+
+body {
+    margin: 0;
+    min-height: 150vh;
+    background: linear-gradient(135deg, #6a00ff, #3f51ff);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: rgb(255, 255, 255);
+}
+
+/* =====================
+   LAYOUT
+===================== */
+.container {
+    width: 95%;
+    max-width: 1600px;
+    display: flex;
+    gap: 50px;
+}
+
+/* =====================
+   LEFT PANEL
+===================== */
+.left {
+    flex: 1;
+    padding-left: 30px;
+}
+
+.hero-btn {
+    background: linear-gradient(90deg, #ff9800, #ff5722);
+    border: none;
+    padding: 38px 70px;
+    font-size: 44px;
+    border-radius: 60px;
+    color: white;
+    margin-bottom: 45px;
+    cursor: pointer;
+    animation: pulse 2s infinite;
+    box-shadow: 0 0 40px rgba(255,152,0,0.6);
+}
+
+@keyframes pulse {
+    0% { transform: scale(1); }
+    50% { transform: scale(1.08); }
+    100% { transform: scale(1); }
+}
+
+.left h1 {
+    font-size: 64px;
+    margin-bottom: 10px;
+}
+
+.left h2 {
+    font-size: 36px;
+    margin-bottom: 25px;
+    color: #ffe082;
+}
+
+.big-text {
+    font-size: 26px;
+    line-height: 1.5;
+    margin-bottom: 35px;
+}
+
+.features-title {
+    font-size: 45px;
+    margin-bottom: 18px;
+}
+
+.features li {
+    font-size: 36px;
+    margin-bottom: 14px;
+}
+
+.guarantee {
+    margin-top: 35px;
+    font-size: 26px;
+    color: #ffd54f;
+}
+
+/* =====================
+   RIGHT CARD
+===================== */
+.card {
+    background: #ffffff;
+    color: black;
+    width: 60%;
+    padding: 50px;
+    border-radius: 28px;
+    box-shadow: 0 35px 80px rgba(0,0,0,0.4);
+}
+
+/* =====================
+   FORM
+===================== */
+.section-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 30px;
+}
+
+.section-header span {
+    font-size: 34px;
+    font-weight: bold;
+    color: #6a00ff;
+}
+
+.section-header small {
+    font-size: 16px;
+    color: #777;
+}
+
+textarea {
+    width: 100%;
+    height: 160px;
+    margin-top: 22px;
+    font-size: 28px;
+    padding: 16px;
+    border-radius: 14px;
+    border: 1px solid #ccc;
+}
+
+input[type="file"] {
+    margin-top: 12px;
+    font-size: 16px;
+}
+
+.analyze-btn {
+    width: 100%;
+    margin-top: 35px;
+    padding: 24px;
+    font-size: 26px;
+    border: none;
+    border-radius: 50px;
+    color: white;
+    background: linear-gradient(90deg, #ff512f, #dd2476);
+    cursor: pointer;
+    box-shadow: 0 12px 30px rgba(221,36,118,0.5);
+}
+
+/* =====================
+   LOADER
+===================== */
+.loader {
+    margin: 40px auto;
+    width: 60px;
+    height: 60px;
+    border: 6px solid #ddd;
+    border-top: 6px solid #6a00ff;
+    border-radius: 50%;
+    animation: spin 1s linear infinite;
+}
+
+@keyframes spin {
+    0% { transform: rotate(0); }
+    100% { transform: rotate(360deg); }
+}
+
+.hidden {
+    display: none !important;
+}
+
+/* =====================
+   SCORE
+===================== */
+.score-circle {
+    width: 180px;
+    height: 180px;
+    margin: 40px auto;
+    border-radius: 50%;
+    background: #4caf50;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 38px;
+    font-weight: bold;
+    color: white;
+}
+
+/* =====================
+   AI SUGGESTIONS
+===================== */
+.ai-box {
+    margin: 40px 0;
+    padding: 35px;
+    border-radius: 20px;
+    background: linear-gradient(135deg, #f3e5f5, #e1bee7);
+    box-shadow: 0 20px 50px rgba(0,0,0,0.15);
+}
+
+.ai-box h3 {
+    font-size: 30px;
+    margin-bottom: 20px;
+    color: #4a148c;
+}
+
+.ai-box ul {
+    list-style: none;
+    padding: 0;
+}
+
+.ai-box li {
+    font-size: 20px;
+    padding: 14px 0;
+    display: flex;
+    align-items: center;
+}
+
+.ai-box li::before {
+    content: "✨";
+    margin-right: 12px;
+}
+
+/* =====================
+   SKILLS
+===================== */
+.skills-row {
+    display: flex;
+    gap: 40px;
+    margin-top: 30px;
+}
+
+.skills-box {
+    flex: 1;
+}
+
+.big {
+    font-size: 28px;
+    margin-bottom: 15px;
+}
+
+.green { color: #2e7d32; }
+.red { color: #c62828; }
+
+.skill-pills {
+    list-style: none;
+    padding: 0;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 14px;
+}
+
+.skill-pills li {
+    padding: 10px 18px;
+    font-size: 18px;
+    border-radius: 25px;
+    font-weight: 600;
+    white-space: nowrap;
+}
+
+/* MATCHED SKILLS */
+.skills-box .green ~ .skill-pills li {
+    background: #e8f5e9;
+    color: #2e7d32;
+    border: 2px solid #66bb6a;
+}
+
+/* MISSING SKILLS */
+.skills-box .red ~ .skill-pills li {
+    background: #ffebee;
+    color: #c62828;
+    border: 2px solid #ef5350;
+}
