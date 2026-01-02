@@ -165,8 +165,8 @@ RESUME-ANALYZER/
 │   │       └── application.properties
 │   └── test/
 │       └── java/com/yourpackage/resumeanalyzer/
-├── docs/
-│   ├── architecture_overview.png
+├── img/
+│   ├── architecture.png
 │   ├── webpage.png
 │   ├── text_example.png
 │   └── pdf_example.png
