@@ -106,7 +106,7 @@ Real screening behavior
 ---
 
 <p align="center">
-  <img src="Architecture.png" width="300%" height="900" />
+  <img src="img/Architecture.png" width="300%" height="900" />
 </p>
 
 
@@ -126,11 +126,11 @@ End-to-end ATS workflow showing resume upload, document parsing, text normalizat
 
 <table width="100%"> <tr> <td width="33%" align="center" valign="top">
 <h3>🌐 Main Web Interface</h3>
-<img src="WEBPAGE.png" width="95%" /> <p> <i> Primary landing page where users upload resumes, paste job descriptions, and start ATS-style analysis instantly. </i> </p> </td> <td width="33%" align="center" valign="top">
+<img src="img/WEBPAGE.png" width="95%" /> <p> <i> Primary landing page where users upload resumes, paste job descriptions, and start ATS-style analysis instantly. </i> </p> </td> <td width="33%" align="center" valign="top">
 <h3>📊 ATS Match Results</h3>
-<img src="texteg.png" width="95%" /> <p> <i> Displays match percentage, skill alignment, and AI-powered resume improvement suggestions in a recruiter-friendly format. </i> </p> </td> <td width="33%" align="center" valign="top">
+<img src="img/texteg.png" width="95%" /> <p> <i> Displays match percentage, skill alignment, and AI-powered resume improvement suggestions in a recruiter-friendly format. </i> </p> </td> <td width="33%" align="center" valign="top">
 <h3>📄 PDF & DOCX Parsing</h3>
-<img src="pdfeg.png" width="95%" /> <p> <i> Demonstrates real resume parsing from PDF and DOCX files using Apache PDFBox and Apache POI. </i> </p> </td> </tr> </table>
+<img src="img/pdfeg.png" width="95%" /> <p> <i> Demonstrates real resume parsing from PDF and DOCX files using Apache PDFBox and Apache POI. </i> </p> </td> </tr> </table>
 
 -----------------
 
