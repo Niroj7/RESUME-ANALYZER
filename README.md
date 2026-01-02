@@ -105,7 +105,7 @@ Real screening behavior
 ---
 
 <p align="center">
-<img src="docs/architecture_overview.png" width="100%" />
+<img src="Architecture.png" width="250%" />
 </p>
 
 <p align="center">
