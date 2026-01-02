@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Resume Analyzer</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+<div class="container">
+
+    <!-- LEFT SECTION -->
+    <div class="left">
+        <button class="hero-btn">🚀 Resume Analyzer</button>
+
+        <h1>Land More Interviews</h1>
+        <h2>Your success is very close</h2>
+
+        <p class="big-text">
+            Tired of applying and hearing nothing back?<br>
+            Check your resume before recruiters do.
+        </p>
+
+        <h3 class="features-title">✨ Our Features</h3>
+
+        <ul class="features">
+            <li>✅ ATS-style resume matching</li>
+            <li>✅ Skill gap analysis</li>
+            <li>✅ Works with PDF, DOCX & pasted text</li>
+            <li>✅ Recruiter-grade insights</li>
+        </ul>
+
+        <p class="guarantee">⭐ Satisfaction guaranteed</p>
+    </div>
+
+    <!-- RIGHT ANALYZER -->
+    <div class="card">
+
+        <!-- Resume -->
+        <div class="section-header">
+            <span>📄 Resume</span>
+            <small>Upload your resume here</small>
+        </div>
+<input
+  type="file"
+  id="resumeFile"
+  name="resumeFile"
+  accept=".pdf,.doc,.docx,.txt"
+/>
+
+<textarea
+  id="resumeText"
+  name="resumeText"
+  placeholder="Paste resume text..."
+></textarea>
+
+<input
+  type="file"
+  id="jdFile"
+  name="jdFile"
+  accept=".pdf,.doc,.docx,.txt"
+/>
+
+<textarea
+  id="jdText"
+  name="jdText"
+  placeholder="Paste job description..."
+></textarea>
+
+        
+        <!-- Analyze Button (🔥 FIXED) -->
+        <button
+            class="analyze-btn"
+            type="button"
+            onclick="analyzeMatch()">
+            🔍 Analyze Match
+        </button>
+
+        <!-- Loader -->
+        <div id="loader" class="loader hidden"></div>
+
+        <!-- Results -->
+        <div id="result" class="hidden">
+
+            <!-- Score -->
+            <div class="score-circle">
+                <span id="scoreText">0%</span>
+            </div>
+
+            <!-- AI Suggestions -->
+            <div id="aiSuggestions" class="ai-box">
+                <h3>🤖 AI Resume Suggestions</h3>
+                <ul id="suggestionList"></ul>
+            </div>
+
+            <!-- Skills -->
+            <div class="skills-row">
+
+                <div class="skills-box">
+                    <h3 class="green big">Matched Skills</h3>
+                    <ul id="matched" class="skill-pills"></ul>
+                </div>
+
+                <div class="skills-box">
+                    <h3 class="red big">Missing Skills</h3>
+                    <ul id="missing" class="skill-pills"></ul>
+                </div>
+
+            </div>
+
+        </div>
+
+    </div>
+</div>
+
+<!-- ✅ MUST BE LAST -->
+<script src="app.js"></script>
+
+</body>
+</html>
