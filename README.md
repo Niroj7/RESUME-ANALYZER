@@ -101,6 +101,7 @@ Real screening behavior
 
 <ul align="left"> <li><b>Git & GitHub</b></li> <li><b>Postman</b></li> <li><b>VS Code / IntelliJ</b></li> <li><b>application.properties</b></li> <li><b>pom.xml</b></li> </ul> </td> </tr> </table>
 
+---
 ## 🏗️ **SYSTEM ARCHITECTURE**
 ---
 
@@ -114,3 +115,110 @@ Real screening behavior
 End-to-end ATS workflow showing resume upload, document parsing, text normalization, skill matching, scoring, AI suggestions, and frontend rendering.
 </i>
 </p>
+
+-----
+
+
+
+## 🖥️ **FRONTEND SCREENS & USER EXPERIENCE**
+---
+
+
+<table width="100%"> <tr> <td width="33%" align="center" valign="top">
+<h3>🌐 Main Web Interface</h3>
+<img src="WEBPAGE.png" width="95%" /> <p> <i> Primary landing page where users upload resumes, paste job descriptions, and start ATS-style analysis instantly. </i> </p> </td> <td width="33%" align="center" valign="top">
+<h3>📊 ATS Match Results</h3>
+<img src="texteg.png" width="95%" /> <p> <i> Displays match percentage, skill alignment, and AI-powered resume improvement suggestions in a recruiter-friendly format. </i> </p> </td> <td width="33%" align="center" valign="top">
+<h3>📄 PDF & DOCX Parsing</h3>
+<img src="pdfeg.png" width="95%" /> <p> <i> Demonstrates real resume parsing from PDF and DOCX files using Apache PDFBox and Apache POI. </i> </p> </td> </tr> </table>
+
+-----------------
+
+**<h2>🧾 SUMMARY </h2>**
+
+Resume Analyzer (ATS-Style) is a **full-stack** application that simulates how real Applicant Tracking Systems evaluate resumes. The system **parses** resumes in PDF, DOCX, or text format, compares skills against job descriptions, calculates match percentage, identifies skill gaps, and **generates AI-style** resume **improvement** suggestions. A clean, user-friendly **frontend**presents results clearly, helping candidates understand ATS decisions and **optimize** resumes for better screening outcomes.
+
+-------------
+
+<h3>📂 PROJECT STRUCTURE</h3>
+
+```
+RESUME-ANALYZER/
+├── src/
+│   ├── main/
+│   │   ├── java/com/yourpackage/resumeanalyzer/
+│   │   │   ├── controller/
+│   │   │   │   ├── HomeController.java
+│   │   │   │   └── ResumeController.java
+│   │   │   ├── service/
+│   │   │   │   ├── ResumeAnalyzerService.java
+│   │   │   │   ├── TextExtractor.java
+│   │   │   │   └── SkillRepository.java
+│   │   │   ├── model/
+│   │   │   │   └── AnalysisResult.java
+│   │   │   └── ResumeAnalyzerApplication.java
+│   │   └── resources/
+│   │       ├── static/
+│   │       │   ├── index.html
+│   │       │   ├── app.js
+│   │       │   └── styles.css
+│   │       └── application.properties
+│   └── test/
+│       └── java/com/yourpackage/resumeanalyzer/
+├── docs/
+│   ├── architecture_overview.png
+│   ├── webpage.png
+│   ├── text_example.png
+│   └── pdf_example.png
+├── pom.xml
+├── mvnw
+└── README.md
+```
+--------
+
+<H2>🛠️ RUNNING LOCALLY</H2>
+
+**1️⃣ Clone the Repository**
+```
+git clone https://github.com/Niroj7/RESUME-ANALYZER.git
+cd RESUME-ANALYZER
+```
+**2️⃣ Prerequisites**
+---------
+
+**Ensure the following are installed on your system**
+
+**1.** **_Java 17 or higher_**
+
+**2.** **_Maven_**
+
+**3.** **_Git_**
+```
+java -version
+mvn -version
+```
+-----------
+**3️⃣ Build the Application**
+
+```
+mvn clean install
+```
+**4️⃣ Run the Spring Boot Application**
+```
+mvn spring-boot:run
+```
+**5️⃣ Access the Application**
+----------
+
+**_Backend API runs at:_**
+```
+ http://localhost:8081
+```
+**Open the frontend by visiting:**
+```
+http://localhost:8081/index.html
+```
+--------
+
+**✨ Happy learning and exploring — thanks for visiting this project! 🚀**
+
